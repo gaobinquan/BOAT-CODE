@@ -1,0 +1,13 @@
+# 等级约束 1-10（初值待用户校正：电力/槽数/可用房间准确值）
+# python_ver = 蟒蛇技术版本；ai_slots = 指挥室提供总指令槽
+levels:
+  - {level: 1,  ai_enabled: false, ai_slots: 0, python_ver: 2, reactor_output: 3,  available_rooms: [reactor, engine_room, laser_room]}
+  - {level: 2,  ai_enabled: false, ai_slots: 0, python_ver: 2, reactor_output: 4,  available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay]}
+  - {level: 3,  ai_enabled: false, ai_slots: 0, python_ver: 2, reactor_output: 5,  available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar]}
+  - {level: 4,  ai_enabled: true,  ai_slots: 3, python_ver: 2, reactor_output: 7,  available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar, command_room]}
+  - {level: 5,  ai_enabled: true,  ai_slots: 4, python_ver: 2, reactor_output: 9,  available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar, command_room, teleport]}
+  - {level: 6,  ai_enabled: true,  ai_slots: 4, python_ver: 2, reactor_output: 11, available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar, command_room, teleport, security_gate]}
+  - {level: 7,  ai_enabled: true,  ai_slots: 5, python_ver: 3, reactor_output: 13, available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar, command_room, teleport, security_gate, pp_room]}
+  - {level: 8,  ai_enabled: true,  ai_slots: 5, python_ver: 3, reactor_output: 16, available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar, command_room, teleport, security_gate, pp_room]}
+  - {level: 9,  ai_enabled: true,  ai_slots: 6, python_ver: 3, reactor_output: 19, available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar, command_room, teleport, security_gate, pp_room]}
+  - {level: 10, ai_enabled: true,  ai_slots: 6, python_ver: 3, reactor_output: 24, available_rooms: [reactor, engine_room, laser_room, missile_room, shield_room, medbay, aa_laser, hangar, command_room, teleport, security_gate, pp_room]}

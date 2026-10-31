@@ -1,0 +1,14 @@
+# 静态威胁度表（作为敌方目标时的战略价值，初值待用户评判）
+threats:
+  engine_room:  {base: 5, note: "打断机动与逃跑"}
+  shield_room:  {base: 4, note: "拆盾后全舰效率提升"}
+  weapon_room:  {base: 3, note: ""}
+  power_room:   {base: 4, note: "瘫痪全舰电力"}
+  teleport:     {base: 4, note: "压制登舰船员"}
+  medbay:       {base: 2, note: ""}
+  hangar:       {base: 2, note: "减少战机投放"}
+  aa_laser:     {base: 2, note: ""}
+  pp_room:      {base: 3, note: ""}
+  command_room: {base: 1, note: ""}
+  security_gate: {base: 1, note: ""}
+  reactor:      {base: 4, note: "同电力室，瘫痪全舰"}

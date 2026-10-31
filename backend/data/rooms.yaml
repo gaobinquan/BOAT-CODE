@@ -1,0 +1,107 @@
+# 房间数据（初值来自公开资料 PPG/pixyship.wiki，待用户文档校正）
+rooms:
+  - id: reactor
+    name: "电力室"
+    category: utility
+    min_ship_level: 1
+    max_power: 6
+    ai_slots: 1
+    threat: 4
+    notes: "被摧毁则全舰断电"
+
+  - id: engine_room
+    name: "引擎室"
+    category: utility
+    min_ship_level: 1
+    max_power: 3
+    ai_slots: 1
+    threat: 5
+    notes: "打断机动与逃跑"
+
+  - id: laser_room
+    name: "激光室"
+    category: weapon
+    min_ship_level: 1
+    max_power: 2
+    weapon: {damage: 1, volley: 1, reload_sec: 3.5}
+    ai_slots: 1
+    threat: 3
+
+  - id: missile_room
+    name: "导弹室"
+    category: weapon
+    min_ship_level: 2
+    max_power: 3
+    weapon: {damage: 4, volley: 1, reload_sec: 5.0, ammo: 12}
+    ai_slots: 2
+    threat: 3
+
+  - id: aa_laser
+    name: "防空激光"
+    category: defense
+    min_ship_level: 3
+    max_power: 2
+    weapon: {damage: 1, volley: 1, reload_sec: 2.0, target: craft}
+    ai_slots: 1
+    threat: 2
+
+  - id: shield_room
+    name: "护盾室"
+    category: defense
+    min_ship_level: 2
+    max_power: 2
+    ai_slots: 1
+    threat: 4
+    notes: "拆盾后全舰效率提升"
+
+  - id: hangar
+    name: "机库"
+    category: defense
+    min_ship_level: 3
+    max_power: 2
+    ai_slots: 1
+    threat: 2
+
+  - id: security_gate
+    name: "安保门"
+    category: defense
+    min_ship_level: 6
+    max_power: 2
+    ai_slots: 1
+    threat: 1
+
+  - id: medbay
+    name: "医务室"
+    category: support
+    min_ship_level: 2
+    max_power: 2
+    ai_slots: 1
+    threat: 2
+
+  - id: command_room
+    name: "指挥室"
+    category: support
+    min_ship_level: 4
+    max_power: 1
+    ai_slots: 0
+    threat: 1
+    notes: "等级决定全舰 AI 指令槽数"
+
+  - id: teleport
+    name: "传送室"
+    category: support
+    min_ship_level: 5
+    max_power: 2
+    ai_slots: 1
+    threat: 4
+    notes: "压制登舰船员"
+
+  - id: pp_room
+    name: "护盾破坏者PP"
+    category: weapon
+    min_ship_level: 7
+    max_power: 2
+    weapon: {damage: 2, volley: 1, reload_sec: 4.0}
+    ai_slots: 1
+    threat: 3
+    notes: "对护盾伤害加成（初值待校正）"

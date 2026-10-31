@@ -1,0 +1,22 @@
+# 船员数据（示例初值，待用户提供人物文档）
+crew:
+  - id: galaxy_alchemist
+    name: "银河炼金术士"
+    stars: 5
+    role: offensive
+    skills: [fire]
+    ai_slots: 2
+
+  - id: repair_bot
+    name: "维修机器人"
+    stars: 3
+    role: repair
+    skills: [repair]
+    ai_slots: 2
+
+  - id: pilot_mae
+    name: "舵手梅"
+    stars: 4
+    role: pilot
+    skills: [pilot]
+    ai_slots: 2

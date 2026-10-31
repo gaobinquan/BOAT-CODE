@@ -1,0 +1,7 @@
+# 战斗场景假设：按等级的平均战斗时长、我方弹药总量假设
+# 用于弹药规划判断"弹量是否够打完整场"（初值待校正）
+scenarios:
+  "1-3":  {duration_sec: 60,  ammo_assumption: 12}
+  "4-6":  {duration_sec: 120, ammo_assumption: 12}
+  "7-8":  {duration_sec: 180, ammo_assumption: 16}
+  "9-10": {duration_sec: 240, ammo_assumption: 20}

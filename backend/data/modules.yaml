@@ -1,0 +1,113 @@
+# AI 指令模块注册表（条件 + 动作）
+# 国服译名待用户文档校正；python_ver = 蟒蛇技术版本（PY2/PY3）
+conditions:
+  - id: cond_none
+    name: "无条件"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_enemy_room_hp_below
+    name: "敌方房间HP低于X%"
+    python_ver: [2, 3]
+    params:
+      - {name: "百分比", type: int, range: [0, 100]}
+      - {name: "目标房间", type: room_ref}
+
+  - id: cond_enemy_hull_full
+    name: "敌舰满血"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_enemy_shield_full
+    name: "敌舰满盾"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_target_room_has_enemy
+    name: "目标房间有敌人"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_target_room_destroyed
+    name: "目标房间被摧毁"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_target_room_full
+    name: "目标房间满血"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_enemy_room_full
+    name: "敌方房间满血"
+    python_ver: [2, 3]
+    params:
+      - {name: "目标房间", type: room_ref}
+
+  - id: cond_enemy_reactor_hp
+    name: "敌方反应堆HP>0"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_enemy_has_craft
+    name: "敌方已部署战机"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_enemy_missile_hp
+    name: "敌方导弹HP>0"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_enemy_teleport_hp
+    name: "敌方传送室HP>0"
+    python_ver: [2, 3]
+    params: []
+
+  - id: cond_my_room_has_enemy
+    name: "我方房间有敌人"
+    python_ver: [3]
+    params: []
+
+actions:
+  - id: act_power_up
+    name: "电力+1"
+    python_ver: [2, 3]
+    params: []
+
+  - id: act_power_down
+    name: "电力-1"
+    python_ver: [2, 3]
+    params: []
+
+  - id: act_set_power
+    name: "设置电力X"
+    python_ver: [2, 3]
+    params:
+      - {name: "电力值", type: int, range: [0, 8]}
+
+  - id: act_set_max_power
+    name: "设置满电力"
+    python_ver: [2, 3]
+    params: []
+
+  - id: act_attack_cond_room
+    name: "攻击条件房间"
+    python_ver: [2, 3]
+    params: []
+
+  - id: act_attack_enemy_room
+    name: "攻击敌方XX房间"
+    python_ver: [2, 3]
+    params:
+      - {name: "目标房间", type: room_ref}
+
+  - id: act_continue_current
+    name: "继续当前任务"
+    python_ver: [2, 3]
+    params: []
+
+  - id: act_set_highest_crew_damage
+    name: "设置最高船员伤害"
+    python_ver: [2, 3]
+    params: []
